@@ -1,9 +1,24 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Nav from "./components/nav";
+import Home from "./pages/Home";
+import Info from "./pages/Info";
+import Contact from "./pages/Contact";
+import Locations from "./pages/Locations";
+
 function App() {
   return (
     <>
-      <section id="center">
-        <h1 class="text-3xl text-red-600 font-bold underline">Hello world!</h1>
-      </section>
+      <BrowserRouter>
+        <Nav />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/informacje" element={<Info />} />
+            <Route path="/kontakt" element={<Contact />} />
+            <Route path="/lokalizacje" element={<Locations />} />
+          </Routes>
+        </main>
+      </BrowserRouter>
     </>
   );
 }
