@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+
+@layer components {
+  .font-candal {
+    font-family: 'Candal', sans-serif;
+  }
+  .font-mont {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .font-text { font-family: 'Open Sans', sans-serif; }
+}
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+}
