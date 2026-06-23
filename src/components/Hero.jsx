@@ -4,23 +4,22 @@ const Hero = () => {
   return (
     <section className="w-full min-h-[90vh] flex items-center bg-[#F1EAE6] py-6 px-6">
       <div className="py-4 container mx-auto max-w-8xl px-6 sm:px-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 relative">
-        
-        <div className="w-full md:w-[60%] flex justify-center items-center relative z-10">
-          <img 
-            src="/assets/van.webp" 
-            alt="Usługi transportowe i przeprowadzki" 
-            className="w-full max-w-240 md:max-w-none h-auto object-contain transform md:scale-112 md:translate-x-4 transition-transform duration-300 hover:scale-[1.15]"
+        <div className=" w-1/2 flex justify-center items-center relative z-10">
+          <img
+            src="/assets/van.webp"
+            alt="Usługi transportowe i przeprowadzki"
+            className="max-w-240 h-auto object-contain transform md:scale-112 md:translate-x-4 transition-transform duration-300 hover:scale-[1.15]"
           />
         </div>
 
-        <div className="font-mont w-full md:w-1/2 flex flex-col items-start space-y-6 md:space-y-16 text-left md:pl-6">
+        <div className="font-mont w-1/2 flex flex-col items-start space-y-6 md:space-y-16 text-left md:pl-6">
           <div className="space-y-6 md:space-y-10">
             <h1 className="font-extrabold text-4xl sm:text-4xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
               Pakujemy. <br />
               Transportujemy. <br />
               Ogarniamy.
             </h1>
-            
+
             <p className="text-xs sm:text-sm font-semibold tracking-[0.25em] text-[#353436] uppercase">
               Młoda ekipa do zadań specjalnych.
             </p>
@@ -31,7 +30,6 @@ const Hero = () => {
             <span>Szybka wycena</span>
           </button>
         </div>
-
       </div>
     </section>
   );
