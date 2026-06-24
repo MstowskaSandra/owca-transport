@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ icon: Icon, title, text, link }) => {
   return (
-    <div className="bg-white border-4 border-[#C2B7B2] rounded-[36px] px-4 py-6 flex flex-col items-center text-center relative transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-md w-full max-w-85 mx-auto min-h-60 ">
+    <div className="bg-white border-4 border-[#C2B7B2] rounded-[36px] px-4 py-6 flex flex-col items-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl shadow-md w-full max-w-85 mx-auto min-h-60 ">
       <div className="text-5xl mb-4 flex justify-center items-center text-[#D46B43]">
         <Icon />
       </div>

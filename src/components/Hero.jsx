@@ -1,5 +1,4 @@
-import { FiPhone } from 'react-icons/fi';
-import CallButton from "./CallButton";
+import { FiPhone } from "react-icons/fi";
 
 const Hero = () => {
   return (
