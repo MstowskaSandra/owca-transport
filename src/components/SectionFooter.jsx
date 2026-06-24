@@ -1,14 +1,14 @@
-const SectionFooter = ({ title, subtext, ctaText }) => {
-    return (
-        <div className="flex flex-col sm:flex-row  justify-self-end gap-4 pt-16 lg:pt-22  font-mont text-sm font-semibold text-[#353436] text-center sm:text-left">
-            <span className="text-[#D46B43] font-bold text-md">
-            {title}
-            </span>
-            <p className="max-w-xl">{subtext}</p>
+import CallButton from "./CallButton";
 
-            <button className="font-mont font-bold rounded-full bg-[#D46B43] px-6 py-2.5 text-[10px] tracking-widest text-[#353436] shadow-md transition-all duration-200 active:scale-95 uppercase">{ctaText}</button>
-        </div>
-    );
+const SectionFooter = ({ title, subtext }) => {
+  return (
+    <div className="pt-20 pb-8 flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-3 font-mont text-sm font-semibold text-[#353436]">
+      <span className="text-[#D46B43] font-bold text-md">{title}</span>
+      <p className="max-w-xl">{subtext}</p>
+
+      <CallButton variant="orange" text="Zadzwoń" />
+    </div>
+  );
 };
 
 export default SectionFooter;
