@@ -1,7 +1,7 @@
+import ReviewSection from "../components/ReviewSection";
+
 const Info = () => {
-    return (
-        <div>O nas</div>
-    )
+  return <ReviewSection />;
 };
 
 export default Info;
