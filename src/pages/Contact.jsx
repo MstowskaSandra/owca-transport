@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="bg-[#F1EAE6]  pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12 flex">
+    <section className="bg-[#F1EAE6]  pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12 flex justify-around">
       <div className="flex flex-col justify-items-start gap-4 px-6 pt-26 w-[50%]">
         <h2 className="font-mont font-extrabold tracking-wider text-2xl">
           Skontaktuj się z nami
@@ -92,7 +92,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="w-[50%]">
+      <div className="w-[40%]">
         <ContactForm />
       </div>
     </section>
