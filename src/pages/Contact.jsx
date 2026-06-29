@@ -5,12 +5,12 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="bg-[#F1EAE6]  pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12 flex justify-around">
+    <section className="bg-[#F1EAE6]  py-16 pb-8 lg:py-20 font-text px-6 lg:px-12 flex justify-around">
       <div className="flex flex-col justify-items-start gap-4 px-6 pt-26 w-[50%]">
-        <h2 className="font-mont font-extrabold tracking-wider text-2xl">
+        <h2 className="font-mont font-extrabold tracking-wider text-2xl text-[#353436] uppercase">
           Skontaktuj się z nami
         </h2>
-        <p className="font-mont leading-6 tracking-wider border-b-3  border-[#D46B43] pb-10">
+        <p className="font-mont leading-6 tracking-wider text-[#353436] border-b-3  border-[#D46B43] pb-10">
           Zadzwoń bezpośrednio albo zostaw nam namiary – oddzwonimy z gotową
           wyceną szybciej, niż zdążysz spakować pierwszy karton.
         </p>
@@ -26,7 +26,9 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Zadzwoń do nas
               </p>
-              <p className="text-sm lg:text-xl font-extrabold">734 414 640</p>
+              <p className="text-sm lg:text-xl font-extrabold text-[#353436] ">
+                734 414 640
+              </p>
             </div>
           </a>
 
@@ -44,7 +46,7 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Napisz e-mail
               </p>
-              <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal">
+              <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal ">
                 owca.ogrody@gmail.com
               </p>
             </div>
@@ -66,7 +68,7 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Znajdź nas
               </p>
-              <p className="text-sm lg:text-xl font-extrabold">
+              <p className="text-sm lg:text-xl font-extrabold text-[#353436] ">
                 Brzegowa 48, 57-100 Strzelin
               </p>
             </div>

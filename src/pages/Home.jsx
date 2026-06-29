@@ -1,5 +1,6 @@
 import AboutFeatures from "../components/AboutFeatures";
 import Hero from "../components/Hero";
+import LargeBanner from "../components/LargeBanner";
 import ServicesOverview from "../components/ServicesOverview";
 import WorkProcess from "../components/WorkProcess";
 import Contact from "./Contact";
@@ -13,6 +14,7 @@ const Home = () => {
       <WorkProcess />
       <AboutFeatures />
       <Locations />
+      <LargeBanner imgUrl="/assets/background.webp" text="kontakt" />
       <Contact />
       <div>Home</div>
     </>
