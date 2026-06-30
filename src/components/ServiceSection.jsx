@@ -1,6 +1,5 @@
 import CallButton from "./CallButton";
 
-// POPRAWKA: Komponent przyjmuje teraz prop 'id'
 export const ServiceSection = ({ service, variant = "left", id }) => {
   const isRight = variant === "right";
 
