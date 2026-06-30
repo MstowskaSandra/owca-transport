@@ -1,5 +1,5 @@
-import CitiesPills from "../components/CitiesPills";
-import SectionFooter from "../components/SectionFooter";
+import CitiesPills from "./CitiesPills";
+import SectionFooter from "./SectionFooter";
 
 const Locations = () => {
   const row1 = [

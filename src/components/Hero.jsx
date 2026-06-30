@@ -25,9 +25,14 @@ const Hero = () => {
             </p>
           </div>
 
-          <button className="mx-auto md:mx-0 flex items-center gap-2.5 rounded-full bg-[#D46B43] px-8 py-4 text-xs sm:text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group">
-            <FiPhone className="text-base sm:text-lg transition-transform duration-200 group-hover:rotate-12" />
-            <span>Szybka wycena</span>
+          <button>
+            <a
+              href="tel:734414640"
+              className="mx-auto md:mx-0 flex items-center gap-2.5 rounded-full bg-[#D46B43] px-8 py-4 text-xs sm:text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
+            >
+              <FiPhone className="text-base sm:text-lg transition-transform duration-200 group-hover:rotate-12" />
+              <span>Szybka wycena</span>
+            </a>
           </button>
         </div>
       </div>

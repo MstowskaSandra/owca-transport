@@ -4,7 +4,7 @@ import ServiceCard from "./ServiceCard";
 
 const ServicesOverview = () => {
   return (
-    <section className="bg-[#F1EAE6] pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12 ">
+    <section className="bg-[#F1EAE6] pt-12 pb-4 lg:pt-14 font-text px-6 lg:px-12 ">
       <div className="max-w-6xl mx-auto text-center uppercase ">
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze usługi

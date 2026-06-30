@@ -5,7 +5,7 @@ import ReviewSection from "../components/ReviewSection";
 import ServicesOverview from "../components/ServicesOverview";
 import WorkProcess from "../components/WorkProcess";
 import Contact from "./Contact";
-import Locations from "./Locations";
+import Locations from "../components/Locations";
 
 const Home = () => {
   return (
