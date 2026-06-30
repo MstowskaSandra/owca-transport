@@ -2,15 +2,20 @@ import { NavLink } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
 
+
 const Nav = () => {
   return (
     <nav className="font-mont tracking-widest sticky top-0 z-50 bg-[#F1EAE6] shadow-sm">
-      <div className="mx-auto px-4 py-4 sm:px-6 sm:py-4 lg:px-12 flex items-center justify-between">
+      <div className="px-4 py-2 sm:px-6 lg:px-12 flex items-center justify-between">
         <NavLink
           to="/"
-          className="text-xl sm:text-2xl lg:text-2xl tracking-wide font-extrabold uppercase text-[#353436] hover:scale-110 transition-all duration-200 hover:text-[#D46B43]"
+          className="hover:translate-x-36 transition-all duration-800"
         >
-          O.M Transport
+          <img
+            src="/assets/logo-hero.svg"
+            alt="Logo O.M Transport"
+            className="w-24 lg:w-42 h-24 lg:h-32 object-contain"
+          />
         </NavLink>
 
         <div className="hidden font-extrabold uppercase lg:flex space-x-8 items-center">

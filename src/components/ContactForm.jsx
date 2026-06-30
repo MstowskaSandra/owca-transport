@@ -40,7 +40,7 @@ export const ContactForm = () => {
 
   return (
     <div className="w-full max-w-3xl mx-auto bg-white p-4 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
-      <h3 className="text-xl font-extrabold text-[#D46B43] mb-8 uppercase tracking-tight text-center">
+      <h3 className="font-mont font-extrabold tracking-wider text-xl text-[#353436] uppercase text-center pb-4">
         Wycena Transportu
       </h3>
 

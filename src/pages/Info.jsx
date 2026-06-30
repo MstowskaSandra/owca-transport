@@ -8,7 +8,6 @@ const Info = () => {
   return (
     <>
       <LargeBanner imgUrl="/assets/background-van.webp" size="S" />
-
       <AboutFeatures />
       <ReviewSection />
       <Locations />

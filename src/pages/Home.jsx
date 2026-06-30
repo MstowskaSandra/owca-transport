@@ -18,7 +18,6 @@ const Home = () => {
       <LargeBanner imgUrl="/assets/background.webp" text="kontakt" />
       <Contact />
       <ReviewSection />
-      <div>Home</div>
     </>
   );
 };
