@@ -1,5 +1,6 @@
 import { services } from "../data/services";
 import ServiceSection from "../components/ServiceSection";
+import { generateSlug } from "../utils/generateSlug";
 
 const Services = () => {
   return (
@@ -14,41 +15,48 @@ const Services = () => {
       </div>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {services.map((service, index) => (
-          <a
-            key={index}
-            href={`#link`}
-            className="group flex items-center justify-between bg-white p-6 rounded-2xl shadow-md border-2 border-gray-100 hover:border-[#D46B43] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
-          >
-            <span className="font-mont font-bold text-xs sm:text-sm text-gray-800 uppercase tracking-wide group-hover:text-[#D46B43] transition-colors">
-              {service.name}
-            </span>
-
-            <svg
-              className="w-5 h-5 text-gray-400 group-hover:text-[#D46B43] group-hover:translate-x-1 transition-all"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        {services.map((service, index) => {
+          const slug = generateSlug(service.name);
+          return (
+            <a
+              key={index}
+              href={`#${slug}`}
+              className="group flex items-center justify-between bg-white p-6 rounded-2xl shadow-md border-2 border-gray-100 hover:border-[#D46B43] hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="3"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </a>
-        ))}
+              <span className="font-mont font-bold text-xs sm:text-sm text-gray-800 uppercase tracking-wide group-hover:text-[#D46B43] transition-colors">
+                {service.name}
+              </span>
+
+              <svg
+                className="w-5 h-5 text-gray-400 group-hover:text-[#D46B43] group-hover:translate-x-1 transition-all"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="3"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          );
+        })}
       </div>
 
       <div className="space-y-12 mt-16">
-        {services.map((service, index) => (
-          <ServiceSection
-            key={index}
-            service={service}
-            variant={index % 2 === 0 ? "left" : "right"}
-          />
-        ))}
+        {services.map((service, index) => {
+          const slug = generateSlug(service.name);
+          return (
+            <ServiceSection
+              key={index}
+              id={slug}
+              service={service}
+              variant={index % 2 === 0 ? "left" : "right"}
+            />
+          );
+        })}
       </div>
     </section>
   );
