@@ -13,6 +13,7 @@ const Info = () => {
       <ReviewSection />
       <Gallery />
       <Locations />
+      <LargeBanner imgUrl="/assets/background.webp" text="kontakt" />
       <Contact />
     </>
   );

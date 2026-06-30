@@ -1,18 +1,29 @@
 import { FiPhone } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-[90vh] flex items-center bg-[#F1EAE6] py-6 px-6">
+    <section className="w-full min-h-[90vh] flex items-center bg-[#F1EAE6] py-6 px-6 overflow-hidden">
       <div className="py-4 container mx-auto max-w-8xl px-6 sm:px-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 relative">
-        <div className=" w-1/2 flex justify-center items-center relative z-10">
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="w-full md:w-1/2 flex justify-center items-center relative z-10"
+        >
           <img
             src="/assets/van.webp"
             alt="Usługi transportowe i przeprowadzki"
-            className="lg:max-w-260 md:max-w-180 max-w-160  h-auto object-cover"
+            className="lg:max-w-260 md:max-w-180 max-w-160 h-auto object-cover"
           />
-        </div>
+        </motion.div>
 
-        <div className="font-mont w-1/2 flex flex-col items-start space-y-6 md:space-y-16 text-left md:pl-6">
+        <motion.div
+          initial={{ opacity: 0, x: 60 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+          className="font-mont w-full md:w-1/2 flex flex-col items-start space-y-6 md:space-y-16 text-left md:pl-6"
+        >
           <div className="space-y-6 md:space-y-10">
             <h1 className="font-extrabold text-4xl sm:text-4xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
               Pakujemy. <br />
@@ -25,16 +36,14 @@ const Hero = () => {
             </p>
           </div>
 
-          <button>
-            <a
-              href="tel:734414640"
-              className="mx-auto md:mx-0 flex items-center gap-2.5 rounded-full bg-[#D46B43] px-8 py-4 text-xs sm:text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
-            >
-              <FiPhone className="text-base sm:text-lg transition-transform duration-200 group-hover:rotate-12" />
-              <span>Szybka wycena</span>
-            </a>
-          </button>
-        </div>
+          <a
+            href="tel:734414640"
+            className="mx-auto md:mx-0 flex items-center gap-2.5 rounded-full bg-[#D46B43] px-8 py-4 text-xs sm:text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
+          >
+            <FiPhone className="text-base sm:text-lg transition-transform duration-200 group-hover:rotate-12" />
+            <span>Szybka wycena</span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
