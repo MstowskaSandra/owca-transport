@@ -1,4 +1,5 @@
 import { services } from "../data/services";
+import ServiceSection from "../components/ServiceSection";
 
 const Services = () => {
   return (
@@ -37,6 +38,16 @@ const Services = () => {
               />
             </svg>
           </a>
+        ))}
+      </div>
+
+      <div className="space-y-12 mt-16">
+        {services.map((service, index) => (
+          <ServiceSection
+            key={index}
+            service={service}
+            variant={index % 2 === 0 ? "left" : "right"}
+          />
         ))}
       </div>
     </section>
