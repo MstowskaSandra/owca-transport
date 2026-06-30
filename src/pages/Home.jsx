@@ -15,9 +15,9 @@ const Home = () => {
       <WorkProcess />
       <AboutFeatures />
       <Locations />
+      <ReviewSection />
       <LargeBanner imgUrl="/assets/background.webp" text="kontakt" />
       <Contact />
-      <ReviewSection />
     </>
   );
 };

@@ -4,7 +4,7 @@ import { generateSlug } from "../utils/generateSlug";
 
 const Services = () => {
   return (
-    <section className="bg-[#F1EAE6] pt-16 pb-8 lg:pt-20 font-text px-6 lg:px-12">
+    <section className="bg-[#F1EAE6] py-16  lg:py-20 font-text px-6 lg:px-12">
       <div className="max-w-6xl mx-auto text-center uppercase pb-12">
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze usługi

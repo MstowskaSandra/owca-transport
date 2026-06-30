@@ -1,4 +1,5 @@
 import AboutFeatures from "../components/AboutFeatures";
+import Gallery from "../components/Gallery";
 import LargeBanner from "../components/LargeBanner";
 import Locations from "../components/Locations";
 import ReviewSection from "../components/ReviewSection";
@@ -10,6 +11,7 @@ const Info = () => {
       <LargeBanner imgUrl="/assets/background-van.webp" size="S" />
       <AboutFeatures />
       <ReviewSection />
+      <Gallery />
       <Locations />
       <Contact />
     </>

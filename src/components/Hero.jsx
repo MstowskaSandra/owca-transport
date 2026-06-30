@@ -8,7 +8,7 @@ const Hero = () => {
           <img
             src="/assets/van.webp"
             alt="Usługi transportowe i przeprowadzki"
-            className="max-w-240 h-auto object-contain transform md:scale-112 md:translate-x-4 transition-transform duration-300 hover:scale-[1.15]"
+            className="lg:max-w-260 md:max-w-180 max-w-160  h-auto object-cover"
           />
         </div>
 

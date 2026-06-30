@@ -1,0 +1,17 @@
+export const galleryImages = [
+  { id: 1, src: "/assets/realizacja-1.webp", alt: "Transport Brzeg" },
+  { id: 2, src: "/assets/realizacja-2.webp", alt: "Transport Oława" },
+  { id: 3, src: "/assets/realizacja-3.webp", alt: "Transport Wrocław" },
+  { id: 3, src: "/assets/realizacja-4.webp", alt: "Transport Poznań-Sowie Góry" },
+  { id: 3, src: "/assets/realizacja-5.webp", alt: "Transport Oława" },
+  { id: 3, src: "/assets/realizacja-6.webp", alt: "Transport Wrocław-Czarna Góra Resort" },
+  { id: 3, src: "/assets/realizacja-7.webp", alt: "Transport Nowa Ruda" },
+  { id: 3, src: "/assets/realizacja-8.webp", alt: "Transport Kłodzko" },
+  { id: 3, src: "/assets/realizacja-9.webp", alt: "Utylizacja z 11 piętra" },
+  { id: 3, src: "/assets/realizacja-10.webp", alt: "Transport palet do Romanowa" },
+  { id: 3, src: "/assets/realizacja-11.webp", alt: "Transport materiałów budowlanych z Ziębic" },
+  { id: 3, src: "/assets/realizacja-12.webp", alt: "Transport Wrocław-Zgorzelec" },
+  { id: 3, src: "/assets/realizacja-13.webp", alt: "Utylizacja komórki lokatorskiej" },
+  { id: 3, src: "/assets/realizacja-14.webp", alt: "Transport Wrocław-Strzelin" },
+  { id: 3, src: "/assets/realizacja-15.webp", alt: "Transport ze Strzelina" },
+];
