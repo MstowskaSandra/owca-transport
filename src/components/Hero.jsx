@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-[90vh] flex items-center bg-[#F1EAE6] py-6 px-6 overflow-hidden">
-      <div className="py-4 container mx-auto max-w-8xl px-6 sm:px-4 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 relative">
+    <section className="w-full min-h-[80vh] md:min-h-[90vh] flex items-center bg-[#F1EAE6] py-12 md:py-6 px-6 overflow-hidden">
+      <div className="py-4 container mx-auto max-w-8xl px-6 sm:px-4 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-6 relative">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
           animate={{ opacity: 1, x: 0 }}
@@ -14,7 +14,7 @@ const Hero = () => {
           <img
             src="/assets/van.webp"
             alt="Usługi transportowe i przeprowadzki"
-            className="lg:max-w-260 md:max-w-180 max-w-160 h-auto object-cover"
+            className="xl:max-w-280 lg:max-w-240 md:max-w-180 max-w-160 sm:max-w-200 h-auto object-cover"
           />
         </motion.div>
 
@@ -22,10 +22,10 @@ const Hero = () => {
           initial={{ opacity: 0, x: 60 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="font-mont w-full md:w-1/2 flex flex-col items-start space-y-6 md:space-y-16 text-left md:pl-6"
+          className="font-mont w-full md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left space-y-6 md:space-y-16 md:pl-6"
         >
           <div className="space-y-6 md:space-y-10">
-            <h1 className="font-extrabold text-4xl sm:text-4xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
+            <h1 className="font-extrabold text-3xl sm:text-4xl md:text-2xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
               Pakujemy. <br />
               Transportujemy. <br />
               Ogarniamy.
@@ -38,10 +38,10 @@ const Hero = () => {
 
           <a
             href="tel:734414640"
-            className="mx-auto md:mx-0 flex items-center gap-2.5 rounded-full bg-[#D46B43] px-8 py-4 text-xs sm:text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
+            className="flex items-center justify-center gap-2.5 sm:w-auto rounded-full bg-[#D46B43] px-8 py-4 text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
           >
-            <FiPhone className="text-base sm:text-lg transition-transform duration-200 group-hover:rotate-12" />
-            <span>Szybka wycena</span>
+            <FiPhone className="text-base transition-transform duration-200 group-hover:rotate-12" />
+            <span className="!text-white">Szybka wycena</span>
           </a>
         </motion.div>
       </div>
