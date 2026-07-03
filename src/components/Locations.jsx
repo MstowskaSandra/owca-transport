@@ -1,5 +1,6 @@
 import CitiesPills from "./CitiesPills";
 import SectionFooter from "./SectionFooter";
+import Reveal from "../utils/Reveal";
 
 const Locations = () => {
   const row1 = [
@@ -15,7 +16,7 @@ const Locations = () => {
 
   return (
     <section className="bg-[#F1EAE6] pt-16 lg:pt-24 pb-2 font-text px-6 lg:px-8 flex flex-col items-center">
-      <div className="max-w-6xl w-full text-center uppercase mb-12 lg:mb-16">
+      <Reveal className="max-w-6xl w-full text-center uppercase mb-12 lg:mb-16">
         <p className="text-[#D46B43] font-mont font-bold mb-3 tracking-widest text-xs sm:text-sm">
           Gdzie działamy?
         </p>
@@ -27,9 +28,9 @@ const Locations = () => {
           Sprawdź główne rejony, w których najczęściej realizujemy
           przeprowadzki, transport gabarytów oraz dostawy z marketów.
         </p>
-      </div>
+      </Reveal>
 
-      <div className="w-full max-w-4xl flex flex-col items-center gap-4 sm:gap-6 px-2">
+      <Reveal className="w-full max-w-4xl flex flex-col items-center gap-4 sm:gap-6 px-2">
         <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
           {row1.map((city, index) => (
             <CitiesPills key={`row1-${index}`} city={city} />
@@ -53,15 +54,15 @@ const Locations = () => {
             <CitiesPills key={`row3-${index}`} city={city} />
           ))}
         </div>
-      </div>
+      </Reveal>
 
-      <div className="max-w-8xl w-full flex justify-center md:justify-end lg:mt-4">
+      <Reveal className="max-w-8xl w-full flex justify-center md:justify-end lg:mt-4">
         <SectionFooter
           title="Nie widzisz swojej miejscowości?"
           subtext="Bez obaw. Działamy elastycznie i dojedziemy w dowolne miejsce w kraju"
           ctaText="Zadzwoń"
         />
-      </div>
+      </Reveal>
     </section>
   );
 };
