@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { validateForm } from "../utils/validateForm";
+import Reveal from "../utils/Reveal";
 
 export const ContactForm = () => {
   const formRef = useRef();
@@ -39,7 +40,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto bg-white p-4 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
+    <Reveal className="w-full max-w-3xl mx-auto bg-white p-4 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
       <h3 className="font-mont font-extrabold tracking-wider text-xl text-[#353436] uppercase text-center pb-4">
         Wycena Transportu
       </h3>
@@ -246,7 +247,7 @@ export const ContactForm = () => {
           </button>
         </div>
       </form>
-    </div>
+    </Reveal>
   );
 };
 

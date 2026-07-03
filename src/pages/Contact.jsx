@@ -1,4 +1,5 @@
 import ContactForm from "../components/ContactForm";
+import Reveal from "../utils/Reveal";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMail, MdLocationOn } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
@@ -6,7 +7,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 const Contact = () => {
   return (
     <section className="bg-[#F1EAE6]  py-16 pb-8 lg:py-20 font-text px-6 lg:px-12 flex justify-around">
-      <div className="flex flex-col justify-items-start gap-4 px-6 pt-26 w-[50%]">
+      <Reveal className="flex flex-col justify-items-start gap-4 px-6 pt-26 w-[50%]">
         <h2 className="font-mont font-extrabold tracking-wider text-2xl text-[#353436] uppercase">
           Skontaktuj się z nami
         </h2>
@@ -92,11 +93,11 @@ const Contact = () => {
             <FaInstagram size={24} />
           </a>
         </div>
-      </div>
+      </Reveal>
 
-      <div className="w-[40%]">
+      <Reveal delay={0.15} className="w-[40%]">
         <ContactForm />
-      </div>
+      </Reveal>
     </section>
   );
 };
