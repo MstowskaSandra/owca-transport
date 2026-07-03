@@ -10,10 +10,10 @@ const AboutFeatures = () => {
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Dlaczego my?
         </p>
-        <h2 className="font-mont text-7xl mb-4 lg:text-6xl font-bold text-[#353436] leading-tight">
+        <h2 className="font-mont text-4xl sm:text-5xl lg:text-6xl mb-4 font-bold text-[#353436] leading-tight">
           dowozimy
         </h2>
-        <p className="text-sm text-[#353436] font-bold mb-2 tracking-wider">
+        <p className="sm:text-sm text-xs text-[#353436] font-bold mb-2 tracking-wider">
           Niezależnie od tego, czy przewozimy jedną pralkę, czy pakujemy całe
           biuro –<br />
           <span className="text-[#D46B43] font-bold mb-2 tracking-wider">
@@ -24,10 +24,10 @@ const AboutFeatures = () => {
 
       <Reveal
         delay={0.1}
-        className="flex flex-wrap justify-self-center max-w-6xl gap-4 mt-10"
+        className="flex flex-wrap justify-center justify-self-center max-w-6xl gap-4 mt-10"
       >
         {features.map((item) => (
-          <div key={item.title}>
+          <div key={item.title} className="w-full max-w-85 sm:w-auto">
             <FeatureCard {...item} />
           </div>
         ))}
