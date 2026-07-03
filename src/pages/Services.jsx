@@ -1,20 +1,22 @@
 import { services } from "../data/services";
 import ServiceSection from "../components/ServiceSection";
 import { generateSlug } from "../utils/generateSlug";
+import Reveal from "../utils/Reveal";
+import SectionFooter from "../components/SectionFooter";
 
 const Services = () => {
   return (
     <section className="bg-[#F1EAE6] py-16  lg:py-20 font-text px-6 lg:px-12">
-      <div className="max-w-6xl mx-auto text-center uppercase pb-12">
+      <Reveal className="max-w-6xl mx-auto text-center uppercase pb-12">
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze usługi
         </p>
         <h2 className="font-mont text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight">
           W czym możemy ci pomóc?
         </h2>
-      </div>
+      </Reveal>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Reveal className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => {
           const slug = generateSlug(service.name);
           return (
@@ -43,21 +45,30 @@ const Services = () => {
             </a>
           );
         })}
-      </div>
+      </Reveal>
 
       <div className="space-y-12 mt-16">
         {services.map((service, index) => {
           const slug = generateSlug(service.name);
           return (
-            <ServiceSection
-              key={index}
-              id={slug}
-              service={service}
-              variant={index % 2 === 0 ? "left" : "right"}
-            />
+            <Reveal key={index} delay={0.15}>
+              <ServiceSection
+                key={index}
+                id={slug}
+                service={service}
+                variant={index % 2 === 0 ? "left" : "right"}
+              />
+            </Reveal>
           );
         })}
       </div>
+      <Reveal delay={0.2}>
+        <SectionFooter
+          title="Nie znalazłeś usługi dla siebie?"
+          subtext="Skontaktuj się z nami, postaramy się pomóc"
+          ctaText="Zadzwoń"
+        />
+      </Reveal>
     </section>
   );
 };
