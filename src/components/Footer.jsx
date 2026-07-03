@@ -13,7 +13,7 @@ export const Footer = () => {
             </h5>
             <ul className="space-y-2 text-xs lg:text-sm text-white/80 w-84">
               {services.map((item, index) => {
-                const slug = generateSlug(item.name); 
+                const slug = generateSlug(item.name);
                 return (
                   <li key={index}>
                     <Link
@@ -87,7 +87,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-2 w-48">
+        <div className="flex flex-col items-center justify-center gap-2 w-60 border-2">
           <img
             src="/assets/logo-circle.svg"
             alt="Logo Owca Ogrody"
@@ -104,7 +104,8 @@ export const Footer = () => {
 
       <div className="text-center text-xs font-semibold text-white/70 py-4 px-6 leading-relaxed">
         <p>
-          © {new Date().getFullYear()} O.M Transport. Wszelkie prawa zastrzeżone.
+          © {new Date().getFullYear()} O.M Transport. Wszelkie prawa
+          zastrzeżone.
         </p>
         <p className="mt-1 opacity-80">
           Projekt i realizacja:{" "}

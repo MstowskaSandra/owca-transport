@@ -16,7 +16,7 @@ const Services = () => {
         </h2>
       </Reveal>
 
-      <Reveal className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((service, index) => {
           const slug = generateSlug(service.name);
           return (
@@ -47,7 +47,7 @@ const Services = () => {
         })}
       </Reveal>
 
-      <div className="space-y-12 mt-16">
+      <div className="space-y-16 md:space-y-12 mt-16">
         {services.map((service, index) => {
           const slug = generateSlug(service.name);
           return (
@@ -62,6 +62,7 @@ const Services = () => {
           );
         })}
       </div>
+
       <Reveal delay={0.2}>
         <SectionFooter
           title="Nie znalazłeś usługi dla siebie?"
