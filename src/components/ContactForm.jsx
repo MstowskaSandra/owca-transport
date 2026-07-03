@@ -40,13 +40,13 @@ export const ContactForm = () => {
   };
 
   return (
-    <Reveal className="w-full max-w-3xl mx-auto bg-white p-4 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
+    <Reveal className="w-full max-w-3xl mx-auto bg-white p-5 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
       <h3 className="font-mont font-extrabold tracking-wider text-xl text-[#353436] uppercase text-center pb-4">
         Wycena Transportu
       </h3>
 
       <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
             <label className="block text-xs font-black text-[#D46B43] mb-2 uppercase tracking-widest">
               Imię i nazwisko
@@ -55,7 +55,7 @@ export const ContactForm = () => {
               name="userName"
               type="text"
               placeholder="np. Jan Kowalski"
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.userName ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -74,7 +74,7 @@ export const ContactForm = () => {
               name="phone"
               type="tel"
               placeholder="Numer kontaktowy..."
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.phone ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -88,7 +88,7 @@ export const ContactForm = () => {
 
         <hr className="border-gray-100" />
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2">
             <label className="block text-xs font-black text-[#D46B43] mb-2 uppercase tracking-widest">
               Miejscowość z której przewozimy
@@ -97,7 +97,7 @@ export const ContactForm = () => {
               name="fromCity"
               type="text"
               placeholder="np. Warszawa"
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.fromCity ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -116,7 +116,7 @@ export const ContactForm = () => {
               name="fromFloor"
               type="text"
               placeholder="np. Parter, 3"
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.fromFloor ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -128,7 +128,7 @@ export const ContactForm = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="md:col-span-2">
             <label className="block text-xs font-black text-[#D46B43] mb-2 uppercase tracking-widest">
               Miejscowość do której przewozimy
@@ -137,7 +137,7 @@ export const ContactForm = () => {
               name="toCity"
               type="text"
               placeholder="np. Kraków"
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.toCity ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -156,7 +156,7 @@ export const ContactForm = () => {
               name="toFloor"
               type="text"
               placeholder="np. 4, dom wolnostojący"
-              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+              className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
                 errors.toFloor ? "border-red-500" : "border-gray-200"
               }`}
             />
@@ -178,7 +178,7 @@ export const ContactForm = () => {
             name="cargo"
             rows="4"
             placeholder="np. Szafa trzydrzwiowa, lodówka, 10 kartonów..."
-            className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all resize-none text-xs font-semibold ${
+            className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all resize-none text-xs font-semibold ${
               errors.cargo ? "border-red-500" : "border-gray-200"
             }`}
           ></textarea>
@@ -197,7 +197,7 @@ export const ContactForm = () => {
             name="maxDimension"
             type="text"
             placeholder="np. Szafa: 220cm x 120cm x 60cm"
-            className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none transition-all text-xs font-semibold ${
+            className={`w-full px-5 py-3 rounded-xl bg-transparent border-2 focus:border-[#D46B43] outline-none appearance-none transition-all text-xs font-semibold ${
               errors.maxDimension ? "border-red-500" : "border-gray-200"
             }`}
           />
@@ -240,7 +240,7 @@ export const ContactForm = () => {
           <button
             type="submit"
             disabled={isSending}
-            className={`cursor-pointer w-full sm:w-auto bg-[#D46B43] text-white font-black text-[10px] uppercase tracking-[0.2em] px-14 py-4 rounded-xl shadow-xl transition-all duration-300
+            className={`cursor-pointer w-full bg-[#D46B43] text-white font-black text-[10px] uppercase tracking-[0.2em] px-14 py-4 rounded-xl shadow-xl transition-all duration-300
               ${isSending ? "opacity-50 cursor-not-allowed" : "hover:bg-[#b5552f] hover:-translate-y-1"}`}
           >
             {isSending ? "Wysyłanie..." : "Wyślij zapytanie"}
