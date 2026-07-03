@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
 
           <a
-            href="tel:734414640"
+            href="tel:668127294"
             className="flex items-center justify-center gap-2.5 sm:w-auto rounded-full bg-[#D46B43] px-8 py-4 text-xs font-black tracking-widest text-white shadow-md transition-all duration-200 hover:bg-[#EAB33B] hover:shadow-lg active:scale-95 cursor-pointer uppercase group"
           >
             <FiPhone className="text-base transition-transform duration-200 group-hover:rotate-12" />

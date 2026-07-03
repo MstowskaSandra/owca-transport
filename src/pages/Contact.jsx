@@ -29,7 +29,7 @@ const Contact = () => {
                 Zadzwoń do nas
               </p>
               <p className="text-sm lg:text-xl font-extrabold text-[#353436] !text-[#353436]">
-                734 414 640
+                668 127 294
               </p>
             </div>
           </a>
@@ -49,7 +49,7 @@ const Contact = () => {
                 Napisz e-mail
               </p>
               <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal text-[#353436] !text-[#353436]">
-                owca.ogrody@gmail.com
+                owczarski.transport@gmail.com
               </p>
             </div>
           </a>

@@ -62,8 +62,8 @@ export const Footer = () => {
                 href="tel:734414640"
                 className="hover:text-white transition hover:translate-x-1 inline-block"
               >
-                <span className="font-semibold text-white">Tel:</span> 734 414
-                640
+                <span className="font-semibold text-white">Tel:</span> 668 127
+                294
               </a>
 
               <a
@@ -71,7 +71,7 @@ export const Footer = () => {
                 className="hover:text-white transition hover:translate-x-1 inline-block"
               >
                 <span className="font-semibold text-white">Email:</span>{" "}
-                owca.transport@gmail.com
+                owczarski.transport@gmail.com
               </a>
 
               <a
@@ -87,14 +87,14 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-2 w-60 border-2">
+        <div className="flex flex-col items-center justify-center gap-2 w-60">
           <img
             src="/assets/logo-circle.svg"
             alt="Logo Owca Ogrody"
             className="w-24 lg:w-36 h-24 lg:h-36 object-contain"
           />
           <p className="font-bold text-lg tracking-wider uppercase">
-            O.M Transport
+            M.O Transport
           </p>
           <p className="font-bold text-xs tracking-wider uppercase">
             Michał Owczarski

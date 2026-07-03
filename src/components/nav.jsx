@@ -102,7 +102,7 @@ const Nav = () => {
                 href="tel:734414640"
                 className="text-black font-mont font-bold text-sm hover:underline"
               >
-                734 414 640
+                668 127 294
               </a>
               <span className="text-gray-600 font-mont font-semibold text-xs">
                 Skontaktuj się z nami
