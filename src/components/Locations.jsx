@@ -20,7 +20,7 @@ const Locations = () => {
         <p className="text-[#D46B43] font-mont font-bold mb-3 tracking-widest text-xs sm:text-sm">
           Gdzie działamy?
         </p>
-        <h2 className="font-mont text-2xl lg:text-3xl font-black text-[#353436] tracking-tight leading-tight mb-6 max-w-3xl mx-auto">
+        <h2 className="font-mont text-xl md:text-2xl lg:text-3xl font-black text-[#353436] tracking-tight leading-tight mb-6 max-w-3xl mx-auto">
           Przeprowadzki i transport na terenie Dolnego Śląska
         </h2>
         <p className="text-xs sm:text-sm text-[#353436] font-medium tracking-widest normal-case max-w-5xl mx-auto leading-relaxed opacity-90">
@@ -30,28 +30,28 @@ const Locations = () => {
         </p>
       </Reveal>
 
-      <Reveal className="w-full max-w-4xl flex flex-col items-center gap-4 sm:gap-6 px-2">
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
+      <Reveal className="w-full max-w-4xl flex flex-wrap sm:flex-col justify-center items-center gap-4 sm:gap-6 px-2">
+        <div className="contents sm:flex sm:flex-wrap sm:justify-center gap-4 sm:gap-6 w-full">
           {row1.map((city, index) => (
             <CitiesPills key={`row1-${index}`} city={city} />
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
+        <div className="contents sm:flex sm:flex-wrap sm:justify-center gap-4 sm:gap-6 w-full">
           {row2.map((city, index) => (
             <CitiesPills key={`row2-${index}`} city={city} />
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
+        <div className="contents sm:flex sm:flex-wrap sm:justify-center gap-4 sm:gap-6 w-full">
           {row3.map((city, index) => (
             <CitiesPills key={`row3-${index}`} city={city} />
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 sm:gap-6 w-full">
+        <div className="contents sm:flex sm:flex-wrap sm:justify-center gap-4 sm:gap-6 w-full">
           {row4.map((city, index) => (
-            <CitiesPills key={`row3-${index}`} city={city} />
+            <CitiesPills key={`row4-${index}`} city={city} />
           ))}
         </div>
       </Reveal>
