@@ -1,18 +1,22 @@
 import { galleryImages } from "../data/gallery";
+import Reveal from "../utils/Reveal";
 
 export const Gallery = () => {
   return (
     <section className="bg-[#F1EAE6] pt-16 pb-12 lg:pt-20 font-text px-6 lg:px-12">
-      <div className="max-w-6xl mx-auto text-center uppercase pb-12">
+      <Reveal className="max-w-6xl mx-auto text-center uppercase pb-12">
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze realizacje
         </p>
         <h2 className="font-mont text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight">
           Galeria zdjęć z naszych transportów i przeprowadzek
         </h2>
-      </div>
+      </Reveal>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+      <Reveal
+        delay={0.25}
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-7xl mx-auto"
+      >
         {galleryImages.map((image) => (
           <div
             key={image.id}
@@ -31,7 +35,7 @@ export const Gallery = () => {
             </div>
           </div>
         ))}
-      </div>
+      </Reveal>
     </section>
   );
 };
