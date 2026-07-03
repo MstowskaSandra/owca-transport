@@ -10,7 +10,7 @@ const ServicesOverview = () => {
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze usługi
         </p>
-        <h2 className="font-mont text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight">
+        <h2 className="font-mont text-lg md:text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight">
           Kompleksowo pomagamy z transportem i przeprowadzkami
         </h2>
       </Reveal>
