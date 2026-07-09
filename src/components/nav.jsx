@@ -81,7 +81,7 @@ const Nav = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-3">
               <a
-                href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
+                href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:scale-110 transition-transform"

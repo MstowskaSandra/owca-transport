@@ -43,7 +43,7 @@ export const Footer = () => {
                 Instagram
               </a>
               <a
-                href="https://facebook.com/"
+                href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white transition hover:translate-x-1 inline-block"

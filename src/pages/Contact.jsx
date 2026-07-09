@@ -79,7 +79,7 @@ const Contact = () => {
 
         <div className="flex justify-center md:justify-start gap-4 pt-16">
           <a
-            href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
+            href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-black p-4 rounded-2xl text-white hover:bg-orange-500 transition-all shadow-lg hover:-translate-y-1"
