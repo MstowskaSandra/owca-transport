@@ -14,7 +14,7 @@ const Hero = () => {
           <img
             src="/assets/van.webp"
             alt="Usługi transportowe i przeprowadzki"
-            className="xl:max-w-280 lg:max-w-240 md:max-w-180 max-w-160 sm:max-w-200 h-auto object-cover"
+            className="xl:max-w-280 lg:max-w-240 md:max-w-180 max-w-120 sm:max-w-200 h-auto object-cover"
           />
         </motion.div>
 
@@ -25,7 +25,7 @@ const Hero = () => {
           className="font-mont w-full md:w-1/2 flex flex-col items-center text-center md:items-start md:text-left space-y-6 md:space-y-16 md:pl-6"
         >
           <div className="space-y-6 md:space-y-10">
-            <h1 className="font-extrabold text-3xl sm:text-4xl md:text-2xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
+            <h1 className="font-extrabold text-2xl sm:text-4xl md:text-2xl lg:text-4xl tracking-wider text-[#353436] leading-[1.15] uppercase">
               Pakujemy. <br />
               Transportujemy. <br />
               Ogarniamy.
