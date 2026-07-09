@@ -7,7 +7,7 @@ import { HiShieldCheck } from "react-icons/hi";
 
 const Contact = () => {
   return (
-    <section className="bg-[#F1EAE6] py-16 pb-8 lg:py-20 font-text px-6 lg:px-12 flex flex-col md:flex-row justify-around items-center md:items-start gap-12 md:gap-4">
+    <section className="bg-[#F1EAE6] py-16 pb-8 lg:py-20 font-text px-2 md:px-6 lg:px-12 flex flex-col md:flex-row justify-around items-center md:items-start gap-12 md:gap-4">
       <Reveal className="flex flex-col justify-items-start gap-4 px-6 pt-0 md:pt-26 w-full md:w-[40%]">
         <h2 className="font-mont font-extrabold tracking-wider text-2xl text-[#353436] uppercase text-center md:text-left">
           Skontaktuj się z nami
@@ -119,7 +119,7 @@ const Contact = () => {
         </div>
       </Reveal>
 
-      <Reveal delay={0.15} className="w-full md:w-[60%] px-4">
+      <Reveal delay={0.15} className="w-full md:w-[60%] px-2 md:px-4">
         <ContactForm />
       </Reveal>
     </section>

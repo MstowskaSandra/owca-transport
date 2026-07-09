@@ -71,7 +71,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <Reveal className="w-full max-w-3xl mx-auto bg-white p-5 sm:p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
+    <Reveal className="w-full max-w-3xl mx-auto bg-white  p-6 lg:p-10 rounded-4xl shadow-2xl border-4 border-[#D46B43]">
       <h3 className="font-mont font-extrabold tracking-wider text-xl text-[#353436] uppercase text-center pb-4">
         Wycena Transportu
       </h3>
