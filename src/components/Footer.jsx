@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <footer className="w-full bg-[#2f2e32] text-white font-mont">
       <div className="max-w-7xl mx-auto px-12 py-12 border-b border-white/30 flex flex-col lg:flex-row justify-between gap-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 lg:gap-24">
           <div>
             <h5 className="font-bold mb-2 lg:mb-4 text-md lg:text-lg">
               Nasze usługi
@@ -112,7 +112,7 @@ export const Footer = () => {
 
       <div className="text-center text-xs font-semibold text-white/70 py-4 px-6 leading-relaxed">
         <p>
-          © {new Date().getFullYear()} O.M Transport. Wszelkie prawa
+          © {new Date().getFullYear()} M.O Transport. Wszelkie prawa
           zastrzeżone.
         </p>
         <p className="mt-1 opacity-80">
