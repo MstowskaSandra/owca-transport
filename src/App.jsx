@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Info from "./pages/Info";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
+import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 
@@ -19,6 +20,8 @@ function App() {
             <Route path="/uslugi" element={<Services />} />
             <Route path="/informacje" element={<Info />} />
             <Route path="/kontakt" element={<Contact />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
