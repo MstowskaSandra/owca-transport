@@ -21,7 +21,7 @@ export const ReviewSection = () => (
 
     <Reveal
       delay={0.3}
-      className="mt-12 flex justify-center px-4 md:justify-end md:pr-12"
+      className="mt-12 flex flex-col items-center px-6 md:flex-row md:justify-end md:pr-12"
     >
       <div className="flex flex-col gap-4">
         <a
