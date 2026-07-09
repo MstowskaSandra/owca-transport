@@ -3,6 +3,7 @@ import Reveal from "../utils/Reveal";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMail, MdLocationOn } from "react-icons/md";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { HiShieldCheck } from "react-icons/hi";
 
 const Contact = () => {
   return (
@@ -28,7 +29,7 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Zadzwoń do nas
               </p>
-              <p className="text-sm lg:text-xl font-extrabold text-[#353436] !text-[#353436]">
+              <p className="text-sm lg:text-xl font-extrabold text-[#353436] !text-[#353436] hover:underline">
                 668 127 294
               </p>
             </div>
@@ -48,7 +49,7 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Napisz e-mail
               </p>
-              <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal text-[#353436] !text-[#353436]">
+              <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal text-[#353436] !text-[#353436] hover:underline">
                 owczarski.transport@gmail.com
               </p>
             </div>
@@ -70,8 +71,29 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Znajdź nas
               </p>
-              <p className="text-sm lg:text-xl font-extrabold text-[#353436] ">
+              <p className="text-sm lg:text-xl font-extrabold text-[#353436] hover:underline">
                 Brzegowa 48, 57-100 Strzelin
+              </p>
+            </div>
+          </a>
+          <a
+            href="https://fixly.pl/profil/kam4zmxu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-6 group cursor-pointer w-fit"
+          >
+            <div className="bg-white p-4 rounded-2xl shadow-md border border-gray-100 hover:bg-[#EAB33B] hover:text-[#D46B43] transition-all duration-300">
+              <HiShieldCheck
+                size={28}
+                className="text-black transition-colors"
+              />
+            </div>
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
+                Zamów usługe
+              </p>
+              <p className="text-sm lg:text-xl font-extrabold text-[#353436] hover:underline">
+                FIXLY- jesteśmy zweryfikowanym usługodawcą
               </p>
             </div>
           </a>

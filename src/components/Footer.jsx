@@ -35,6 +35,14 @@ export const Footer = () => {
             </h5>
             <div className="flex flex-col gap-2 text-xs lg:text-sm text-white/80">
               <a
+                href="https://fixly.pl/profil/kam4zmxu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition hover:translate-x-1 inline-block"
+              >
+                Fixly
+              </a>
+              <a
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -1,6 +1,7 @@
 import { reviews } from "../data/reviews";
 import ReviewCard from "./ReviewCard";
 import { FcGoogle } from "react-icons/fc";
+import { HiCheck } from "react-icons/hi";
 import Reveal from "../utils/Reveal";
 
 export const ReviewSection = () => (
@@ -22,15 +23,26 @@ export const ReviewSection = () => (
       delay={0.3}
       className="mt-12 flex justify-center px-4 md:justify-end md:pr-12"
     >
-      <a
-        href="https://share.google/r7xgF3dJDwaWx6zH9"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center justify-center text-center gap-2 cursor-pointer font-mont text-xs sm:text-sm font-semibold text-white w-full max-w-80 sm:w-auto px-5 py-3 rounded-full bg-[#D46B43] hover:bg-orange-600 hover:scale-105 transition shadow-md"
-      >
-        Sprawdź nas w Google
-        <FcGoogle className="text-lg shrink-0" />
-      </a>
+      <div className="flex flex-col gap-4">
+        <a
+          href="https://share.google/r7xgF3dJDwaWx6zH9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center text-center gap-2 cursor-pointer font-mont text-xs sm:text-sm font-semibold text-white w-full max-w-80 sm:w-auto px-5 py-3 rounded-full bg-[#D46B43] hover:bg-orange-600 hover:scale-105 transition shadow-md"
+        >
+          Sprawdź nas w Google
+          <FcGoogle className="text-lg shrink-0" />
+        </a>
+        <a
+          href="https://fixly.pl/profil/kam4zmxu"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center text-center gap-2 cursor-pointer font-mont text-xs sm:text-sm font-semibold text-white w-full max-w-80 sm:w-auto px-5 py-3 rounded-full bg-[#D46B43] hover:bg-orange-600 hover:scale-105 transition shadow-md"
+        >
+          Sprawdź nas w Fixly
+          <HiCheck className="text-lg shrink-0 border-2 rounded-full" />
+        </a>
+      </div>
     </Reveal>
   </section>
 );
