@@ -5,12 +5,12 @@ import Reveal from "../utils/Reveal";
 
 const ServicesOverview = () => {
   return (
-    <section className="bg-[#F1EAE6] pt-12 pb-4 lg:pt-14 font-text px-6 lg:px-12 ">
+    <section className="bg-[#F1EAE6] pt-12 pb-4 lg:pt-14 font-text px-2 sm:px-4 lg:px-12 ">
       <Reveal className="max-w-6xl mx-auto text-center uppercase ">
         <p className="text-[#D46B43] font-bold mb-2 tracking-wide">
           Nasze usługi
         </p>
-        <h2 className="font-mont text-lg md:text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight">
+        <h2 className="font-mont text-lg md:text-xl lg:text-3xl font-extrabold text-[#353436] leading-tight w-full">
           Kompleksowo pomagamy z transportem i przeprowadzkami
         </h2>
       </Reveal>
