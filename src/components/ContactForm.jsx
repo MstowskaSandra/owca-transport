@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import { validateForm } from "../utils/validateForm";
 import Reveal from "../utils/Reveal";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 export const ContactForm = () => {
   const formRef = useRef();
@@ -28,6 +29,7 @@ export const ContactForm = () => {
 
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+      toast.error("Popraw błędy w formularzu!");
     } else {
       setErrors({});
       setIsSending(true);
@@ -44,16 +46,25 @@ export const ContactForm = () => {
             setIsSending(false);
             setErrors({});
             formRef.current.reset();
-            alert(
-              "Zapytanie o wycenę zostało wysłane pomyślnie! Odpowiemy najszybciej jak to możliwe.",
-            );
+            toast.success("Zapytanie wysłane pomyślnie!", {
+              duration: 4000,
+              style: {
+                border: "2px solid #D46B43",
+                padding: "16px",
+                color: "#353436",
+                fontFamily: "system-ui",
+                fontWeight: "600",
+              },
+              iconTheme: {
+                primary: "#3de40f",
+                secondary: "#FFFAEE",
+              },
+            });
           },
           (error) => {
             setIsSending(false);
             console.error("Błąd krytyczny EmailJS:", error);
-            alert(
-              "Nie udało się wysłać formularza. Sprawdź połączenie sieciowe lub spróbuj ponownie za chwilę.",
-            );
+            toast.error("Nie udało się wysłać formularza. Spróbuj ponownie.");
           },
         );
     }

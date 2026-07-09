@@ -5,12 +5,14 @@ import Info from "./pages/Info";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Nav />
+        <Toaster position="top-right" reverseOrder={false} />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
