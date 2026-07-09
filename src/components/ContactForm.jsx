@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import { validateForm } from "../utils/validateForm";
 import Reveal from "../utils/Reveal";
+import emailjs from "@emailjs/browser";
 
 export const ContactForm = () => {
   const formRef = useRef();
@@ -31,11 +32,30 @@ export const ContactForm = () => {
       setErrors({});
       setIsSending(true);
 
-      setTimeout(() => {
-        setIsSending(false);
-        formRef.current.reset();
-        alert("Wiadomość wysłana pomyślnie!");
-      }, 2000);
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+          formRef.current,
+          import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        )
+        .then(
+          () => {
+            setIsSending(false);
+            setErrors({});
+            formRef.current.reset();
+            alert(
+              "Zapytanie o wycenę zostało wysłane pomyślnie! Odpowiemy najszybciej jak to możliwe.",
+            );
+          },
+          (error) => {
+            setIsSending(false);
+            console.error("Błąd krytyczny EmailJS:", error);
+            alert(
+              "Nie udało się wysłać formularza. Sprawdź połączenie sieciowe lub spróbuj ponownie za chwilę.",
+            );
+          },
+        );
     }
   };
 
