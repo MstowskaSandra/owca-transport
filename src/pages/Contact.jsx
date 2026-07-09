@@ -8,7 +8,7 @@ import { HiShieldCheck } from "react-icons/hi";
 const Contact = () => {
   return (
     <section className="bg-[#F1EAE6] py-16 pb-8 lg:py-20 font-text px-2 md:px-6 lg:px-12 flex flex-col md:flex-row justify-around items-center md:items-start gap-12 md:gap-4">
-      <Reveal className="flex flex-col justify-items-start gap-4 px-6 pt-0 md:pt-26 w-full md:w-[40%]">
+      <Reveal className="flex flex-col justify-items-start gap-4 px-2 lg:px-6 pt-0 md:pt-26 w-full md:w-[40%]">
         <h2 className="font-mont font-extrabold tracking-wider text-2xl text-[#353436] uppercase text-center md:text-left">
           Skontaktuj się z nami
         </h2>
@@ -49,7 +49,7 @@ const Contact = () => {
               <p className="text-xs font-black uppercase tracking-[0.2em] text-orange-600 mb-1">
                 Napisz e-mail
               </p>
-              <p className="text-sm lg:text-xl font-extrabold break-all sm:break-normal text-[#353436] !text-[#353436] hover:underline">
+              <p className="text-xs lg:text-xl font-extrabold break-all sm:break-normal text-[#353436] !text-[#353436] hover:underline">
                 owczarski.transport@gmail.com
               </p>
             </div>
