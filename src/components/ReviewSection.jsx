@@ -4,16 +4,19 @@ import { FcGoogle } from "react-icons/fc";
 import { HiCheck } from "react-icons/hi";
 import Reveal from "../utils/Reveal";
 
+
+
 export const ReviewSection = () => (
   <section className="bg-[#F1EAE6] py-16 lg:py-18 font-text overflow-hidden">
     <Reveal className="max-w-6xl mx-auto text-center uppercase px-6">
       <p className="text-[#D46B43] font-bold mb-2 tracking-wide">opinie</p>
+
       <h2 className="font-mont text-lg md:text-xl lg:text-2xl font-extrabold text-[#353436] leading-tight">
         Nasza praca mówi sama za siebie, tak samo jak opinie naszych klientów
       </h2>
     </Reveal>
 
-    <div className="flex flex-wrap justify-center gap-6 mt-12 px-6 md:px-12">
+    <div className="flex flex-wrap justify-center gap-6 mt-12 mx-2 px-4 md:px-12 border-2 border-red-500">
       {reviews.map((item, index) => (
         <ReviewCard key={index} {...item} delay={0.2 + index * 0.1} />
       ))}
@@ -33,6 +36,7 @@ export const ReviewSection = () => (
           Sprawdź nas w Google
           <FcGoogle className="text-lg shrink-0" />
         </a>
+
         <a
           href="https://fixly.pl/profil/kam4zmxu"
           target="_blank"
@@ -47,4 +51,4 @@ export const ReviewSection = () => (
   </section>
 );
 
-export default ReviewSection;
+export default ReviewSection; 
