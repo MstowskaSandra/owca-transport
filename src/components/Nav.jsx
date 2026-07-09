@@ -185,7 +185,7 @@ const Nav = () => {
           <div className="pt-6 border-t border-gray-300 space-y-6">
             <div className="flex gap-6">
               <a
-                href="https://facebook.com/people/Owca-Ogrody/100087780861997/#"
+                href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 hover:text-[#D46B43] hover:scale-110 transition-transform"
