@@ -8,7 +8,7 @@ const ReviewCard = ({ name, text, delay = 0 }) => {
   return (
     <Reveal
       delay={delay}
-      className="flex-1 w-full min-w-80 max-w-60 md:max-w-[320px] bg-[#ffffff] border-2 border-[#D46B43] rounded-3xl shadow-lg p-5 sm:p-6 flex flex-col hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
+      className="flex-1 md:w-full min-w-80 max-w-60 md:max-w-[320px] bg-[#ffffff] border-2 border-[#D46B43] rounded-3xl shadow-lg p-5 sm:p-6 flex flex-col hover:-translate-y-1 hover:shadow-2xl transition-all duration-300"
     >
       <div className="flex items-center gap-2 sm:gap-3 pb-3 sm:pb-4">
         <FcGoogle className="text-2xl sm:text-3xl shrink-0" />

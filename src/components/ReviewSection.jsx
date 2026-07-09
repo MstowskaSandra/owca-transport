@@ -16,7 +16,7 @@ export const ReviewSection = () => (
       </h2>
     </Reveal>
 
-    <div className="flex flex-wrap justify-center gap-6 mt-12 mx-2 px-4 md:px-12 border-2 border-red-500">
+    <div className="flex flex-wrap justify-center gap-6 mt-12 mx-2 px-4 md:px-12">
       {reviews.map((item, index) => (
         <ReviewCard key={index} {...item} delay={0.2 + index * 0.1} />
       ))}
