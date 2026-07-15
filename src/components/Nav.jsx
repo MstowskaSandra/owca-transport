@@ -81,7 +81,7 @@ const Nav = () => {
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center gap-3">
               <a
-                href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
+                href="https://www.facebook.com/people/MO-Transport/61589353359186/?locale=pl_PL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:scale-110 transition-transform"
@@ -89,7 +89,7 @@ const Nav = () => {
                 <FaFacebook size={24} />
               </a>
               <a
-                href="https://instagram.com/owca.ogrody/"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-2xl hover:scale-110 transition-transform"
@@ -99,7 +99,7 @@ const Nav = () => {
             </div>
             <div className="flex flex-col items-end font-text">
               <a
-                href="tel:734414640"
+                href="tel:668127294"
                 className="text-black font-mont font-bold text-sm hover:underline"
               >
                 668 127 294
@@ -185,7 +185,7 @@ const Nav = () => {
           <div className="pt-6 border-t border-gray-300 space-y-6">
             <div className="flex gap-6">
               <a
-                href="https://www.facebook.com/profile.php?id=61589353359186&locale=pl_PL"
+                href="https://www.facebook.com/people/MO-Transport/61589353359186/?locale=pl_PL"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 hover:text-[#D46B43] hover:scale-110 transition-transform"
@@ -193,7 +193,7 @@ const Nav = () => {
                 <FaFacebook />
               </a>
               <a
-                href="https://instagram.com/owca.ogrody/"
+                href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-3xl text-gray-700 hover:text-[#D46B43] hover:scale-110 transition-transform"
@@ -205,10 +205,10 @@ const Nav = () => {
             <div className="flex flex-col gap-1 pb-20 font-mont">
               <p className="text-gray-600 text-sm">Skontaktuj się z nami</p>
               <a
-                href="tel:734414640"
+                href="tel:668127294"
                 className="block text-xl font-bold text-gray-800 hover:underline"
               >
-                734 414 640
+                668 127 294
               </a>
             </div>
           </div>
